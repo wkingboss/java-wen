@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-语法</title>
+</head>
+<body>
+<script type="text/javascript">
+//语法:包含各种语句,函数...
+    /*
+    一.数据类行:
+    1).数值型Number
+    2).字符串
+    3).对象
+    4).undefine
+    5).null
+
+    java定义变量:数据类型 数据名称=数据值
+
+    JavaScript定义变量:var 数据名称=数据值
+
+    JavaScript是一个弱语法的脚本语言,变量类型有后面的数据值确定
+     */
+/*1)Number类型*/
+var a=10;//语句和语句之间用分号隔开
+console.log("a="+a);
+a=11.5;
+//typeof(变量名)获得变量的类型
+console.log("a="+a+typeof (a));
+/*字符串*/
+var b="abd"
+    console.log("b="+b+typeof (b));
+/*扩展:字符串拼接*/
+var c="hello world"
+    var d=c+b;
+console.log(d+typeof (d));
+//市值类型拼接字串类型
+    var dd=a+b;//number+string 11.5+abd
+    console.log(dd+typeof (dd));
+//如果加好两边有一个字符串是字符串类型,则另一边不是字符串类型的
+//会自动转换成字符串拼接
+//2.如果加号两边都是number类型,则加号会被当做加法运算符
+    var ddd=11.5+10+11;
+    console.log(ddd);
+    /*布尔类型*/
+    var e=true;
+    console.log(e+"--"+typeof (e));
+
+    var ee=e+"labou";//布尔类型+string
+    console.log(ee+"--"+typeof (ee));
+
+    /*undefine未定义类型*/
+    var f;
+    console.log(typeof (f));
+ var ff=f+a;
+ console.log(ff+"--"+typeof (ff));
+
+ var fff=f+b
+console.log(fff+"--"+typeof (fff));
+     /*null对象,定义了对象,与undefine类似*/
+    var g=null;
+    console.log(g+"--"+typeof(g) );
+
+/**
+ * 变量命名规范
+ * 1.见名知意
+ * 2.区分大小写
+ * 3.由数字,字母,下划线,美元符组成
+ * 4.数字不能开头
+ * 5.不能用保留字,关键字
+ */
+</script>
+</body>
+</html>

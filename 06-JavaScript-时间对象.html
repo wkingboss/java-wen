@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-时间对象</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    var date=new Date();
+    //获取年份 返回四位数
+    var year=date.getFullYear();
+    //获取月份 返回0~11
+    var month=date.getMonth();
+    //获取星期几 返回1~7
+    var day=date.getDay();
+    //获取天数 返回0~31
+    var day1=date.getDate();
+    //获取小时 0~23
+    var hour=date.getHours();
+    //获取分钟 返回0~59
+    var minutes=date.getMinutes();
+    //获取秒 返回0~59
+    var second=date.getSeconds();
+    console.log(year+"年"+(month+1)+"月"+day1+"日"+hour+"时"+minutes+"分"+second+"秒");
+    console.log(day);
+
+
+
+</script>
+</body>
+</html>

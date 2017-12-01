@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-交互2</title>
+</head>
+<body>
+
+<input type="text"
+       id="username"
+       placeholder="随便输入点东西">
+
+<button onclick="clickme()">点我获取内容</button>
+<script type="text/javascript">
+    function clickme() {
+        //先找到input元素
+        /*通过id的方式获取元素,返回的是单个元素对象*/
+        var input=document.getElementById("username");
+        //获取input元素的值
+        var value=input.value;
+        //弹出框的方式显示输入值
+        alert("输入框的值"+"    "+value)
+        input.style.color="#f88";//更改文字颜色
+        input.style.borderColor="blue";
+    }
+    function onkey() {
+        
+    }
+</script>
+
+</body>
+</html>
